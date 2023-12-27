@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define paths to repositories
-frontend_repo_path="./setup-frontend"
-backend_repo_path="./setup-backend"
-docker_repo_path="./setup-config"
+frontend_repo_path="./frontend"
+backend_repo_path="./backend"
+docker_repo_path="./config"
 
 # Function to clone or pull a repository
 clone_or_pull() {
@@ -20,16 +20,10 @@ clone_or_pull() {
     fi
 }
 
-git submodule update --init --recursive
-
-git submodule update --recursive --remote
-
 # Clone or pull repositories
-# clone_or_pull "git@github.com:dalveersidhu97/setup-frontend.git" "$frontend_repo_path"
-# clone_or_pull "git@github.com:dalveersidhu97/setup-backend.git" "$backend_repo_path"
-# clone_or_pull "git@github.com:dalveersidhu97/setup-config.git" "$docker_repo_path"
-
-
+clone_or_pull "git@github.com:dalveersidhu97/setup-frontend.git" "$frontend_repo_path"
+clone_or_pull "git@github.com:dalveersidhu97/setup-backend.git" "$backend_repo_path"
+clone_or_pull "git@github.com:dalveersidhu97/setup-config.git" "$docker_repo_path"
 
 # Navigate to the Docker repository
 cd "$docker_repo_path"

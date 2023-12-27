@@ -1,0 +1,9 @@
+[submodule "setup-frontend"]
+	path = setup-frontend
+	url = git@github.com:dalveersidhu97/setup-frontend.git
+[submodule "setup-backend"]
+	path = setup-backend
+	url = git@github.com:dalveersidhu97/setup-backend.git
+[submodule "setup-config"]
+	path = setup-config
+	url = git@github.com:dalveersidhu97/setup-config.git
