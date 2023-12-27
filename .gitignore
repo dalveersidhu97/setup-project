@@ -1,0 +1,5 @@
+# Ignore all folders
+/*/
+
+# Allow files in the root
+!/*
