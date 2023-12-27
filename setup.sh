@@ -13,4 +13,4 @@ git submodule update --recursive --remote
 cd "$docker_repo_path"
 
 # Start frontend and backend containers using Docker Compose
-docker-compose watch
+docker-compose up
